@@ -6,7 +6,11 @@ int main(){
     cout<<"enter the number: "<<endl;
     cin>>n;
     bool isprime=true;
-    for(int i=2;i<n/2;i++){
+    if(n==0 || n==1){
+        cout<<"number should be greater than 2 :"<<endl;
+    }
+    else{
+    for(int i=2;i<=n/2;i++){
         if(n%i==0){
             isprime=false;
             break;
@@ -21,6 +25,6 @@ int main(){
     else{
          cout<<"the given number is not prime number :"<<endl;
     }
-    
+}
     return 0;
 }
